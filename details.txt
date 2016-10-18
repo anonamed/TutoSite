@@ -1,0 +1,14 @@
+TutoSite :
+Créer un tuto d'utilisation d'un site web :
+	- Permettre au webmaster de choisir quel zone sont à modifier
+	- Mettre en surbrillance des éléments
+	- Permettre au webmaster de modifier les messages des alertes et les couleurs de background
+	- Faire des "alertes" pour expliquer les boutons
+	- Organiser de façon ordonner avec des pauses sur le tuto (bouton 'next')
+	- Bouton "play" pour lancer le tuto
+
+Détails :
+	- Récupérer les éléments css des balises en cliquant sur les valeurs et pouvoir les modifier (par exemple, mettre un background rouge pour mettre l'élément en avant..
+	- Ajout automatique lors du clique d'une "alerte" dont le message d'information doit être rentré au préalable par le créateur du tuto.
+	- Enregistrer l'ordre des modifications.
+	- Ajouter un bouton pour faire défiler les information du tuto dans l'ordre.
