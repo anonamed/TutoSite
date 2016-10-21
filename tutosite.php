@@ -7,7 +7,11 @@ Author: Hugo Ft
 License: GPL3
 */
 
-load_plugin_textdomain( 'hugo', false, plugin_basename( dirname(__FILE__) ) . '/lang' );
+function ap_action_init()
+{
+    load_plugin_textdomain( 'tutosite', false, plugin_basename( dirname(__FILE__) ) . '/lang' );
+}
+add_action('init', 'ap_action_init');
 
 add_action( 'admin_menu', 'my_plugin_menu' );
 
@@ -24,10 +28,10 @@ function my_plugin_options()
     }
     ?>
     <div class="wrap">
-        <p><?php _e( 'Here is where you can create the tutorial :', 'hugo' );?></p>
+        <p><?php _e( 'Here is where you can create the tutorial :', 'tutosite' );?></p>
     </div>
 
-    <div class="descri"><?php _e( 'Take a screenshot of your web page, modified the screen if you like, and upload it in Tuto (max 5 screens)', 'hugo' );?></div><br/>
+    <div class="descri"><?php _e( 'Take a screenshot of your web page, modified the screen if you like, and upload it in Tuto (max 5 screens)', 'tutosite' );?></div><br/>
 
 
     <div id="primary">
