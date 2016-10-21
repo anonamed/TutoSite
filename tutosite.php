@@ -17,7 +17,7 @@ add_action( 'admin_menu', 'my_plugin_menu' );
 
 
 function my_plugin_menu() {
-    add_options_page( 'TutoSite Options', 'TutoSite', 'manage_options', 'my-unique-identifier', 'my_plugin_options' );
+    add_options_page( 'TutoSite Options', 'TutoSite', 'manage_options', 'tutosite', 'my_plugin_options' );
 
 }
 
@@ -63,7 +63,13 @@ function my_plugin_options()
             <?php endwhile ?>
             <button class="button-pre"><< Previous</button>&nbsp;
             <button class="button-nex">Next >></button>
-            </div>
+            </div><br/>
+        <?php
+            $adresse = "http://".$_SERVER['SERVER_NAME'].$_SERVER["REQUEST_URI"];
+            $_SESSION['adresse'] = $adresse;
+            echo '<div class="lien">Copy/paste the url of your tuto in your site web : ' .$adresse."</div><br />";
+        ?>
+
 
             <style type="text/css">
                 #tutos > div {
