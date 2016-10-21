@@ -64,11 +64,6 @@ function my_plugin_options()
             <button class="button-pre"><< Previous</button>&nbsp;
             <button class="button-nex">Next >></button>
             </div><br/>
-        <?php
-            $adresse = "http://".$_SERVER['SERVER_NAME'].$_SERVER["REQUEST_URI"];
-            $_SESSION['adresse'] = $adresse;
-            echo '<div class="lien">Copy/paste the url of your tuto in your site web : ' .$adresse."</div><br />";
-        ?>
 
 
             <style type="text/css">
